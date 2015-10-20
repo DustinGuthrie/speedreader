@@ -33,3 +33,25 @@ return total + " minute read.)";
 
 //here we add the returned string to the h3 from the html and replace where it is left off
 document.querySelector('h3').innerHTML += timeToRead();
+
+////********************************************************
+////This is another way we could have done this - but its not working!!!!:
+// var howManyWords = prompt("How many words per minute can you read?");
+
+// var timeToRead = function() {
+//     var paragraphs = [].slice.call(document.querySelectorAll('p'));
+//     var allStrings = paragraphs.split(" ");
+//     var massiveString = " ";
+//     for(var i in paragraphs) {
+//       massiveString += paragraphs[i].textContent;
+//
+//       // console.log(massiveString);
+//     }
+//
+// var wordCount = paragraphs.length;
+// var total = Math.round(wordCount/230);
+// return total + " minute read.";
+// };
+// document.querySelector('h3').innerHTML += timeToRead();
+
+/////******************************************
